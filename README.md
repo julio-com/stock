@@ -1,11 +1,11 @@
-A product video module for [julio.com](https://julio.com) (Magento 2).  
+The module updates stock in Magento 2 from Dropbox files.
 
 ## How to install
 ```
 bin/magento maintenance:enable
 rm -rf composer.lock
 composer clear-cache
-composer require julio.com/video:*
+composer require julio.com/stock:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
 bin/magento setup:di:compile
@@ -25,10 +25,10 @@ bin/magento cache:enable
 ## How to upgrade
 ```
 bin/magento maintenance:enable
-composer remove julio.com/video
+composer remove julio.com/stock
 rm -rf composer.lock
 composer clear-cache
-composer require julio.com/video:*
+composer require julio.com/stock:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
 bin/magento setup:di:compile
